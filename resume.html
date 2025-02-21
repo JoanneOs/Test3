@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this is the Main container */
+        #main_container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* this is the Section container */
+        #section1 {
+            display: flex;
+            flex-direction: column;
+            /* googled it */
+            gap: 5px; 
+
+            background: lightblue;
+            /* we dont need background color */
+        }
+
+        /* flex box or contqiner for Box 1 and Box 2 to be in a row */
+        .box-container {
+            display: flex;
+            gap: 5px;
+            /* we need space between Box 1 and Box 2 */
+        }
+
+        /* box 1 styling my profile image and name) */
+        .box1 {
+            flex: 1;
+
+            text-align: center;
+            /* background-color: azure; */
+
+        }
+
+        #profile_image {
+            width: 100px;
+            /* Set the width of the image */
+            height: 100px;
+            /* Set the height of the image */
+            border-radius: 50%;
+            /* Optional: make the image circular */
+            object-fit:contain;
+            /* Ensures the image fits within the box without distorting */
+        }
+
+
+        .box2 {
+            flex: ;
+            /* margin-top: 666; */
+            margin: 42px;
+
+
+        }
+
+
+        .box3 {
+            padding: 1px;
+            border: 1px solid #debfbf;
+
+        }
+
+        .name-info-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        /* style for name  */
+        .name-container {
+            flex: 1;
+            font-weight: bold;
+        }
+
+
+
+
+
+        .info-container {
+            flex: 2;
+            /* Give more space to the info container */
+        }
+
+        a {
+            color: #3d5f84;
+            text-decoration: none;
+        }
+
+        /* Section 2 and 3 container */
+        #section2_3 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            /* i adjust this width */
+        }
+
+        .section2 {
+            width: 80%;
+            background-color: lightgrey;
+        }
+
+        /* Additional styling for content inside sections */
+
+        .section3 {
+            margin-bottom: 10px;
+            background:lightgray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main_container">
+        <!--ection 1: Personal Info, General Info, and summary -->
+        <section id="section1">
+
+            <div class="box-container">
+                <!-- Box 1: Image, Full Name, and Title -->
+                <div class="box1">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E03AQEkw3C7uz54yw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1567555778451?e=1745452800&v=beta&t=ph2hYS3etbkuA9Lro6vvCku3LL2DU9n6ZswpAGsCw34"
+                        alt="Profile Image" id="profile_image">
+                    <h3>Joanne Osman</h1>
+                        <h3>Search Grader/ IT Assistance</h3>
+                </div>
+                <br><br>
+                <!-- Box 2: General Information -->
+                <div class="box2">
+
+                    <div class="name-container">
+
+                        <div class="info-container">
+                            <h5>
+                                <p><strong>Location:</strong> San Antonio, TX</p>
+                                <p><strong>Email:</strong> jowanawsman@outlook.com</p>
+                                <strong>Phone:</strong> 210-919-8063
+                                <p><strong>LinkedIn:</strong> <a
+                                        href="www.linkedin.com/in/joanneosman">www.linkedin.com/in/joanneosman
+                                    </a></p>
+
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- in box 3 : summary (placed below Box 1 and Box 2) -->
+            <div class="box3">
+                <h3>Summary</h3>
+                <p>AI Trainer skilled in search optimization, problem-solving, and dispatch management. Experienced in
+                    prior authorization, IT support, and delivering results across various industries.</p>
+
+            </div>
+        </section>
+
+        <section id="section2_3">
+            <!-- employment and Education) -->
+            <div class="section2 box">
+                <h3>Experience</h3>
+                <p><strong>AI Trainer / Search Grader</strong><br>Centific · Contract<br>Oct 2024 - Present</p>
+                <p><strong>Managing Member / Dispatch</strong><br>TriWay Transportation LLC · Full-time<br>Oct 2021 -
+                    Present</p>
+                <p><strong>Prior Authorization</strong><br>CVS Health · Full-time<br>Oct 2018 - Dec 2023</p>
+                <h3>Education</h3>
+                <p><strong>Computer Science</strong><br>Bachelor's degree, Computer Science and Mathematics</p>
+            </div>
+
+            <!-- Section 3 my skills -->
+            <div class="section3 box">
+                <h3>Programming Skills</h3>
+                <ul>
+                    <li>C++</li>
+                    <li>Mahematics</li>
+                    <li>Microsoft Office</li>
+                </ul>
+                <h3>Language Skills</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Arabic</li>
+                    <li>Kurdish</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</body>
+
+</html>
